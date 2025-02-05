@@ -2,7 +2,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
+    "deploy": "gh-pages -d out",
     "start": "next start"
   },
   "dependencies": {
@@ -45,6 +46,7 @@
     "yet-another-react-lightbox": "^3.17.0"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "react-devtools": "^6.1.0"
   }
 }
